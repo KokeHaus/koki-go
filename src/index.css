@@ -1,0 +1,173 @@
+body {
+  font: 300px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-color:lightblue;
+}
+
+title {
+  font: 500px "Century Gothic", Futura, sans-serif;
+  margin: 50px;
+}
+font {
+  font: 20px "Century Gothic", Futura, sans-serif;
+  color: blue;
+  position:absolute;
+  top: 300px;
+}
+
+
+#pass-btn {
+}
+
+#board {
+    position: relative;
+}
+
+#newgame-btn{
+  background-color: #4CAF50;
+  top: 350px;
+  position:absolute;
+}
+
+.intersection {
+    width: 20px;
+    height:20px;
+    border-radius: 18px;
+    position: absolute;
+    box-sizing: border-box;
+}
+.intersection:hover {
+background-color: #000;
+}
+.intersection.conditional {
+    width: 20px;
+    height:20px;
+    border-radius: 18px;
+    position: absolute;
+    box-sizing: border-box;
+}
+.intersection.conditional:hover {
+background-color: #eee;
+}
+
+.intersection:before {
+    border-top: 2px #000 solid;
+    width: 20px;
+    display: block;
+    content: "";
+    top: 8px;
+    position: absolute;
+    z-index: -1;
+}
+
+.intersection:after {
+    border-left: 2px #000 solid;
+    height: 20px;
+    display: block;
+    content: "";
+    left: 8px;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+.intersection.bp{
+
+background-color:purple;
+}
+
+.magic_point_class {
+  
+border-radius:-2px;
+background-color: #444;
+border-bottom-right-radius: 85%;
+border-bottom-left-radius: 85%;
+border-top-left-radius: 85%;
+border-top-right-radius: 85%;
+
+transform:rotate(45deg);
+}
+
+/*  
+.intersection.bp{
+
+border-radius:-2px;
+background-color: #444;
+border-bottom-right-radius: 85%;
+border-bottom-left-radius: 85%;
+border-top-left-radius: 85%;
+border-top-right-radius: 85%;
+z-index: 1;
+opacity:75%;
+}  */
+
+/* 
+.intersection.bp{
+
+width:5px;
+height:5px;
+transform:rotate(45deg);
+background-color:#000;
+border-radius: 0;
+
+}   */
+
+.intersection.wp{
+ background-color:yellow;
+}
+
+.intersection.np{
+  width: 20px;
+  height:20px;
+  border-radius: 18px;
+  position: absolute;
+  box-sizing: border-box;
+
+}
+
+.intersection.black, .intersection.white {
+    border-radius: 18px solid #000;
+}
+
+.intersection.black {
+    background-color: #444;
+}
+
+.intersection.white {
+    background-color: #eee;
+}
+
+.intersection.wib{
+  background-color: gold;
+}
+.intersection.biw{
+  background-color:hotpink;
+}
+.intersection.conditional.black, .intersection.conditional.white {
+    border-radius: 18x solid #000;
+}
+
+.intersection.conditional.black {
+    background-color: #444;
+}
+
+.intersection.conditional.white {
+    background-color: #eee;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
