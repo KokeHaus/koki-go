@@ -1,7 +1,7 @@
 body {
   font: 300px "Century Gothic", Futura, sans-serif;
   margin: 20px;
-  background-color:lightblue;
+  background-color:#815438;
 }
 
 title {
@@ -12,11 +12,13 @@ font {
   font: 20px "Century Gothic", Futura, sans-serif;
   color: blue;
   position:absolute;
-  top: 300px;
+  top: 410px;
 }
 
-
-#pass-btn {
+#text{
+  position:absolute;
+  top:410px;
+  
 }
 
 #board {
@@ -25,8 +27,24 @@ font {
 
 #newgame-btn{
   background-color: #4CAF50;
-  top: 350px;
   position:absolute;
+  top:450px;
+}
+
+#pass-btn{
+  background-color: #4CAF50;
+  position:absolute;
+  top:500px;
+  left: 20%;
+}
+
+
+
+#aboutme{
+  background-color: #4CAF50;
+  position:absolute;
+  top:450px;
+  right:80%;
 }
 
 .intersection {
@@ -171,3 +189,53 @@ border-radius: 0;
 .game-info {
   margin-left: 20px;
 }
+
+
+
+
+
+/* #form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: absolute; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); } */
+/* #inputchat { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; position: absolute; bottom: 0; left: 0; right: 0; } */
+#inputchat{ background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: absolute; bottom: 0; left: 0; right: 0; display: flex; height: 2rem; width: 94%; box-sizing: border-box; backdrop-filter: blur(10px);}
+#inputchat:focus { outline: red; }
+
+#formbutton { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; height: 2rem; outline: none; color: #fff; float: right; position: absolute; bottom:0%;left:94%;}
+
+#messages { font: 30px "Century Gothic", Futura, sans-serif;list-style-type: none; margin: 5rem; padding: 1rem; overflow:auto; }
+#messages > li {   position: relative;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #A8DDFD;
+  width: 200px;
+  height: 50px;
+  text-align: left;
+  font: 400 .9em 'Open Sans', sans-serif;
+  border: 1px solid #97C6E3;
+  border-radius: 10px; }
+#messages > li:nth-child(odd) {   position: relative;
+  margin-bottom: 5px;
+  margin-left: calc(100% - 240px);
+  padding: 10px;
+  background-color: #f8e896;
+  width: 200px;
+  height: 50px;
+  text-align: left;
+  font: 400 .9em 'Open Sans', sans-serif;
+  border: 1px solid #dfd087;
+  border-radius: 10px;}
+
+
+
+
+  #container{
+    position:absolute;
+    top:60%;
+    margin-bottom: 25px;
+    background: gray;
+    height: 300px;
+    left:0px;
+    width: 100%;
+    border: 1px solid #000;
+    overflow:auto;
+  }
